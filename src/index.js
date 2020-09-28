@@ -12,6 +12,10 @@ exports.max = function max(array) {
     if (array === undefined || !Array.isArray(array) || array.length === 0) {
         return 0;
     }
+
+    return array.reduce((acc, curr) => {
+        return curr > acc ? curr : acc;
+    }, array[0]);
 };
 
 exports.avg = function avg(array) {
