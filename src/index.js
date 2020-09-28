@@ -6,7 +6,6 @@ exports.min = function min(array) {
     return array.reduce((acc, curr) => {
         return curr < acc ? curr : acc;
     }, array[0]);
-    return 0;
 };
 
 exports.max = function max(array) {
